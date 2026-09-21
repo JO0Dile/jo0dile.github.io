@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dile — Hammam Al Natsha</title>
+
+<meta name="author" content="Hammam Al Natsha">
+<meta name="description" content="Hammam &quot;Dile&quot; Al Natsha — AI &amp; Robotics Engineering student at the Arab American University of Palestine. Builder of AAUPath, RL-Scientist and Trades Work Manager. Not affiliated with the Jodel social app.">
+<link rel="canonical" href="https://jo0dile.github.io/">
+
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Dile — Hammam Al Natsha">
+<meta property="og:title" content="Dile — Hammam Al Natsha">
+<meta property="og:description" content="AI & Robotics Engineering student at the Arab American University of Palestine. I build software, train models, and ship experiments.">
+<meta property="og:url" content="https://jo0dile.github.io/">
+<meta name="twitter:card" content="summary">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Hammam Al Natsha",
+  "givenName": "Hammam",
+  "familyName": "Al Natsha",
+  "alternateName": ["Dile", "JoDile", "jo0dile", "JO0Dile", "دايل", "جو دايل"],
+  "url": "https://jo0dile.github.io/",
+  "jobTitle": "AI & Robotics Engineering Student",
+  "description": "Hammam \"Dile\" Al Natsha is an AI and Robotics Engineering student at the Arab American University of Palestine, working between research and software engineering with a focus on reinforcement learning and local LLMs. Dile is a person, not a product, and is not affiliated with Jodel, the location-based social app.",
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "Arab American University of Palestine",
+    "alternateName": "AAUP"
+  },
+  "knowsAbout": ["Reinforcement Learning", "Local large language models", "Robotics", "Android development", "Web development"],
+  "knowsLanguage": ["en", "ar"],
+  "sameAs": ["https://github.com/jo0dile"],
+  "mainEntityOfPage": "https://jo0dile.github.io/"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "AAUPath",
+  "alternateName": ["AAUP Academic Planner", "AAUP Study Plans"],
+  "url": "https://jo0dile.github.io/AAUPath/",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "Web browser",
+  "author": { "@type": "Person", "name": "Hammam Al Natsha", "alternateName": "Dile", "url": "https://jo0dile.github.io/" },
+  "inLanguage": ["en", "ar"],
+  "description": "A free, offline-capable academic planner for Arab American University (AAUP) students. Track courses year by year, check prerequisites, and calculate your GPA in English or Arabic.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+
+<style>
+  :root {
+    --bg: #ffffff; --fg: #16181d; --muted: #5c626e;
+    --line: #e4e6eb; --accent: #b8621b; --card: #fafbfc; --tag: #eef0f3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #101216; --fg: #e9ebf0; --muted: #979dab;
+      --line: #272b33; --accent: #f0a35e; --card: #171a20; --tag: #232730;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #101216; --fg: #e9ebf0; --muted: #979dab;
+    --line: #272b33; --accent: #f0a35e; --card: #171a20; --tag: #232730;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.65 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 72px 16px 96px; }
+
+  h1 { font-size: clamp(2rem, 7vw, 2.8rem); line-height: 1.12; margin: 0 0 6px; letter-spacing: -0.02em; }
+  h1 .sub { display: block; font-size: 0.42em; font-weight: 500; color: var(--muted);
+            letter-spacing: 0; margin-top: 10px; line-height: 1.5; }
+  .alt { color: var(--muted); font-size: 1rem; margin: 0 0 30px; }
+  .alt a { color: var(--accent); }
+
+  h2 { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.09em;
+       color: var(--muted); margin: 54px 0 16px; font-weight: 600; }
+  p { margin: 0 0 16px; }
+  a { color: var(--accent); }
+
+  .note {
+    border-left: 3px solid var(--accent); background: var(--card);
+    padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 0 0 30px;
+  }
+  .note p { margin: 0; color: var(--muted); font-size: 0.94rem; }
+  .note strong { color: var(--fg); }
+
+  .card {
+    display: block; border: 1px solid var(--line); border-radius: 12px;
+    padding: 20px 22px; margin-bottom: 14px; text-decoration: none;
+    color: inherit; background: var(--card);
+    transition: border-color .15s ease, transform .15s ease;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-1px); }
+  .card.lead { border-color: var(--accent); }
+  .card h3 { margin: 0 0 7px; font-size: 1.08rem; }
+  .card p { margin: 0 0 12px; color: var(--muted); font-size: 0.94rem; }
+  .card p:last-child { margin-bottom: 0; }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tags span {
+    font-size: 0.74rem; color: var(--muted); background: var(--tag);
+    border-radius: 5px; padding: 3px 9px; letter-spacing: 0.02em;
+  }
+  .tags .live { color: var(--accent); font-weight: 600; }
+
+  .meaning { font-size: 1.04rem; }
+  .meaning em { color: var(--accent); font-style: normal; font-weight: 600; }
+
+  footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--line);
+           color: var(--muted); font-size: 0.9rem; }
+  footer a { margin-right: 18px; display: inline-block; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Dile
+    <span class="sub">Hammam Al Natsha · AI &amp; Robotics Engineering,
+    Arab American University of Palestine</span>
+  </h1>
+  <p class="alt">also written JoDile · <span dir="rtl" lang="ar">دايل / جو دايل</span> ·
+    <a href="https://github.com/jo0dile">@jo0dile</a></p>
+
+  <div class="note">
+    <p><strong>Dile is a person, not a product.</strong> I'm not affiliated with
+    <em>Jodel</em>, the location-based social app. Different name, different thing.</p>
+  </div>
+
+  <p>I work in the middle ground between research and software engineering — focused
+  on reinforcement learning and local LLMs. Mostly I build tools I needed and
+  couldn't find: things that run on your own machine and keep working when the
+  network doesn't.</p>
+
+  <h2>Work</h2>
+
+  <a class="card lead" href="https://jo0dile.github.io/portfolio/">
+    <h3>Portfolio →</h3>
+    <p>The full thing — projects, skills and experiments, with a 3D scene, a
+    companion robot that follows your cursor, live app mockups and a lab
+    playground. Built in vanilla HTML and CSS with Three.js and GSAP, no framework
+    and no build step.</p>
+    <div class="tags"><span class="live">Live</span><span>Three.js</span><span>GSAP</span><span>Vanilla JS</span></div>
+  </a>
+
+  <a class="card" href="https://jo0dile.github.io/AAUPath/">
+    <h3>AAUPath — AAUP Academic Planner</h3>
+    <p>Every course in your degree, and where you are on it. Browse university →
+    college → study plan, then track courses, real AND/OR prerequisite groups, and
+    GPA on the university's own grading scale. Fully bilingual with right-to-left
+    layout, works offline, no account needed. Your own plan edits layer on top of
+    published data and are never overwritten by an update.</p>
+    <div class="tags"><span class="live">Live</span><span>JavaScript</span><span>Offline</span><span>EN / AR</span></div>
+  </a>
+
+  <a class="card" href="https://github.com/jo0dile/RL-Scientist">
+    <h3>RL-Scientist</h3>
+    <p>Autonomous reinforcement learning experimentation, local and private, built
+    for consumer hardware. A local LLM through Ollama proposes one constrained
+    hyperparameter change at a time, runs your training program, scores the result
+    and decides whether to keep or revert it — then repeats. No API keys, no cloud.
+    Alpha.</p>
+    <div class="tags"><span>Python</span><span>Ollama</span><span>MIT</span></div>
+  </a>
+
+  <a class="card" href="https://github.com/jo0dile/Construction-trades">
+    <h3>Trades Work Manager</h3>
+    <p>Field management for construction and trades work — electricians, plumbers,
+    HVAC, painters, carpenters and builders. Tools and materials, day planning,
+    projects, safety sign-off and the audit trail behind it, in Hebrew, Arabic and
+    English, working with no signal. Native on both platforms: Kotlin with Jetpack
+    Compose on Android, Swift with SwiftUI on iOS — no WebView, no hybrid shell.</p>
+    <div class="tags"><span>Kotlin</span><span>Swift</span><span>Offline</span><span>HE / AR / EN</span></div>
+  </a>
+
+  <a class="card" href="https://github.com/jo0dile/vencord-custom-banners">
+    <h3>vencord-custom-banners</h3>
+    <p>Custom banner database for Vencord.</p>
+    <div class="tags"><span>HTML</span></div>
+  </a>
+
+  <h2>The name</h2>
+
+  <p class="meaning">Dile is the sunlight that breaks through the middle of the
+  rain — the warm shaft of light that falls at an angle through a storm. The kind
+  of light that reads like hope.</p>
+
+  <p class="meaning">It's also the tail end of <em>croco&#8203;dile</em>. Both
+  readings are correct.</p>
+
+  <footer>
+    <a href="https://github.com/jo0dile">GitHub</a>
+    <a href="https://jo0dile.github.io/portfolio/">Portfolio</a>
+    <a href="https://jo0dile.github.io/AAUPath/">AAUPath</a>
+  </footer>
+
+</div>
+</body>
+</html>
